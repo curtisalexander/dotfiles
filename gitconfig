@@ -12,4 +12,4 @@
     autocrlf = input
     editor = vim
 [credential]
-	helper = libsecret
+	helper = store
