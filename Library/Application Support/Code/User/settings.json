@@ -1,0 +1,65 @@
+{
+  // Editor
+  // Controls the font size in pixels.
+  "editor.fontSize": 14,
+
+  // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
+  "editor.formatOnSave": true,
+
+  // Python
+  // Folders in your home directory to look into for virtual environments.
+  "python.venvFolders": [
+    "envs",
+    ".pyenv",
+    ".direnv",
+    ".local/share/virtualenvs"
+  ],
+  "python.pythonPath": "/Users/calex/miniconda3/bin/python",
+
+  // Julia
+  // Points to the julia executable.
+  "julia.executablePath": "/usr/local/bin/julia",
+
+  // Enable usage data and errors to be sent to the julia VS Code extension developers.
+  "julia.enableTelemetry": false,
+
+  // Vim
+  // Non-recursive remapped keys in normal mode. Allows mapping to vim commands or vscode actions. See README for more.
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    }
+  ],
+
+  // Git
+  "git.autofetch": true,
+
+  // JS
+  "[javascript]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+
+  // Markdown
+  "[markdown]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+
+  // PowerShell
+  // Recommended per https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/vscode/using-vscode?view=powershell-6#configuration-settings-for-visual-studio-code
+  "csharp.suppressDotnetRestoreNotification": true,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "omnisharp.projectLoadTimeout": 120,
+  "files.trimTrailingWhitespace": true,
+
+  // Markdown-pdf
+  // pdf only. Display header and footer.
+  "markdown-pdf.displayHeaderFooter": false,
+}
