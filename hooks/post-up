@@ -3,7 +3,7 @@
 # VS Code
 PLATFORM="uname -a | cut -d' ' -f1"
 
-if [ "$PLATFORM"="Darwin" ]; then
+if [ "$PLATFORM" = "Darwin" ]; then
     ~/.dotfiles/bin/install-vscode-ext-macos
 fi
 
