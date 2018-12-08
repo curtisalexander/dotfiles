@@ -1,3 +1,9 @@
 #!/bin/sh
 
-~/.dotfiles/bin/install-vscode-extensions
+PLATFORM="uname -a | cut -d' ' -f1"
+
+if [ "$PLATFORM == "Darwin" ]
+    echo "Hooray!"
+fi
+
+# ~/.dotfiles/bin/install-vscode-ext-macos

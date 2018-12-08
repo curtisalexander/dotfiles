@@ -1,4 +1,3 @@
 #!/bin/sh
 
-DOTFILES="$HOME/.dotfiles"
-rcup -f -d "$DOTFILES" -x README.md -x LICENSE -x install -t macos
+rcup -f -d "$HOME/.dotfiles" -x README.md -x LICENSE -x install -t macos
