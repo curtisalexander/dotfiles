@@ -2,7 +2,7 @@
 
 PLATFORM="uname -a | cut -d' ' -f1"
 
-if [ "$PLATFORM == "Darwin" ]
+if [ "$PLATFORM"="Darwin" ]; then
     echo "Hooray!"
 fi
 
