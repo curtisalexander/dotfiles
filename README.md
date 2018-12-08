@@ -27,7 +27,7 @@ sudo apt-get install rcm
 
 ### Get dotfiles
 
-Now that we have `rcm`, clone my dotfiles.
+Now that I have `rcm`, clone my dotfiles.
 
 ```sh
 git clone https://github.com/curtisalexander/dotfiles.git ~/code/dotfiles
