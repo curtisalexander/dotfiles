@@ -1,6 +1,6 @@
 # dotfiles
 
-My dotfiles are managed with [rcm](https://github.com/thoughtbot/rcm).  The blog post for `rcm` is [here](https://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos).
+My dotfiles are managed with [rcm](https://github.com/thoughtbot/rcm).  The [thoughtbot](https://thoughtbot.com/) blog post for `rcm` is [here](https://robots.thoughtbot.com/rcm-for-rc-files-in-dotfiles-repos).
 
 
 ## Getting Started
