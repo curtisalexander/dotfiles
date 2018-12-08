@@ -1,0 +1,4 @@
+#!/bin/sh
+
+DOTFILES="$HOME/.dotfiles"
+rcup -f -d "$DOTFILES" -x README.md -x LICENSE -x install -t macos
