@@ -1,9 +1,19 @@
 #!/bin/sh
 
+# VS Code
 PLATFORM="uname -a | cut -d' ' -f1"
 
 if [ "$PLATFORM"="Darwin" ]; then
-    echo "Hooray!"
+    ~/.dotfiles/bin/install-vscode-ext-macos
 fi
 
-# ~/.dotfiles/bin/install-vscode-ext-macos
+# Plug
+if [ -e "$HOME"/.vim/autoload/plug.vim ]; then
+  vim -E -s +PlugUpgrade +qa
+else
+  curl -fLo "$HOME"/.vim/autoload/plug.vim --create-dirs \
+      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+vim -u "$HOME"/.vimrc.plug +PlugUpdate +PlugClean! +qa
+
+reset -Q
