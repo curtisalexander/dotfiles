@@ -1,34 +1,12 @@
-" dein =====================================================
-" https://github.com/Shougo/dein.vim"
-
-if &compatible
- set nocompatible
-endif
-
-" Add the dein installation directory into runtimepath
-set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
-
-if dein#load_state('~/.cache/dein')
-  call dein#begin('~/.cache/dein')
-
-  call dein#add('~/.cache/dein')
-  call dein#add('Shougo/deoplete.nvim')
-  call dein#add('NLKNguyen/papercolor-theme')
-
-  if !has('nvim')
-    call dein#add('roxma/nvim-yarp')
-    call dein#add('roxma/vim-hug-neovim-rpc')
-  endif
-
-  call dein#end()
-  call dein#save_state()
-endif
-
 filetype plugin indent on
 syntax enable
 
+" Plug
+if filereadable(expand("~/.vimrc.plug"))
+    source ~/.vimrc.plug
+endif
 
-" colors  =====================================================
+" colors
 set background=dark
 set termguicolors
 let g:PaperColor_Theme_Options = {
@@ -41,15 +19,15 @@ let g:PaperColor_Theme_Options = {
 colorscheme PaperColor
 
 
-" edit =====================================================
-
-" indent
+" indent and spacing
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set smarttab
 set expandtab
 set autoindent
+set list listchars=tab:->,trail:·
+set nojoinspaces
 
 " search
 set hlsearch        " highlight search
@@ -84,10 +62,8 @@ nnoremap k gk
 cmap w!! w !sudo tee 1> /dev/null %
 
 
-" filetypes =================================================
 
 " JS
-
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 " JSON
@@ -101,4 +77,3 @@ autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
 " Markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 softtabstop=4
-
