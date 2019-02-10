@@ -12,7 +12,6 @@ alias tree="exa --tree"
 # tell grep to highlight matches
 set -gx GREP_OPTIONS "--color=auto"
 
-
 # macos vs windows subsystem for linux
 if test (uname) = "Darwin"
     # homebrew
@@ -27,6 +26,7 @@ if test (uname) = "Darwin"
     # python
     set -gx PYTHONDONTWRITEBYTECODE 1
 
+    # path
     set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $NPM_PACKAGES/bin $PATH
 else
     alias python="python3"
