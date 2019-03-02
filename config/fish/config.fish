@@ -8,9 +8,7 @@ alias cls="clear"
 alias ll="exa --header --long"
 alias lla="exa --header --long -a"
 alias tree="exa --tree"
-
-# tell grep to highlight matches
-set -gx GREP_OPTIONS "--color=auto"
+alias grep="grep --color=auto"
 
 # macos vs windows subsystem for linux
 if test (uname) = "Darwin"
