@@ -24,6 +24,7 @@ if test (uname) = "Darwin"
     # python
     set -gx PYTHONDONTWRITEBYTECODE 1
 
+    # path
     set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $NPM_PACKAGES/bin $PATH
 else
     alias python="python3"
