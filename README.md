@@ -36,3 +36,8 @@ git clone https://github.com/curtisalexander/dotfiles.git ~/code/dotfiles
 ### Setup dotfiles
 
 <placeholder>
+
+
+### Add a new dotfile
+
+<placeholder>
