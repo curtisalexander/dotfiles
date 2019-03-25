@@ -35,9 +35,38 @@ git clone https://github.com/curtisalexander/dotfiles.git ~/code/dotfiles
 
 ### Setup dotfiles
 
-<placeholder>
+After cloning, run the appropriate install script depending upon whether running on MacOS or Ubuntu.
 
+```sh
+cd bin
+
+# macos
+install-dotfiles-macos
+
+# ubuntu
+install-dotfiles-ubuntu
+```
+
+The last step in each of the scripts above is to run `rcup`.  This will create symlinks from `~/.dotfiles` to your home directory.
+
+Anytime that `rcup` is run &mdash; whether it is after the initial setup or after a regular update &mdash; the script `hooks/post-up` is run.
+
+To create a symlink from `~/.dotfiles` to your home directory run the following.
+
+```sh
+rcup -v
+```
 
 ### Add a new dotfile
 
-<placeholder>
+Add a new rc file to the `~/.dotfiles` directory.
+
+```sh
+mkrc ~/.netrc
+```
+
+After adding to the `~/.dotfiles` directory, create the appropriate symlink.
+
+```sh
+rcup -v
+```
