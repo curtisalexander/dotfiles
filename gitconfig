@@ -13,5 +13,3 @@
     editor = vim
 [include]
     path = ~/.gitconfig.local
-[credential]
-    helper = store
