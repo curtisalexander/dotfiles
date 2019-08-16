@@ -1,11 +1,14 @@
 {
+  // Workbench
+  "window.restoreWindows": "none",
+  "workbench.iconTheme": "material-icon-theme",
   // Editor
   // Controls the font size in pixels.
   "editor.fontSize": 14,
-
+  //"editor.fontFamily": "Fira Code",
+  //"editor.fontLigatures": true,
   // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
   "editor.formatOnSave": true,
-
   // Python
   // Folders in your home directory to look into for virtual environments.
   "python.venvFolders": [
@@ -14,12 +17,9 @@
     ".direnv",
     ".local/share/virtualenvs"
   ],
-
   // Default Python interpreter / path
   "python.pythonPath": "/Users/calex/miniconda3/bin/python",
-
   "python.formatting.provider": "black",
-
   // Vim
   // Non-recursive remapped keys in normal mode. Allows mapping to vim commands or vscode actions. See README for more.
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -46,22 +46,18 @@
       "after": ["<Esc>"]
     }
   ],
-
   // Git
   "git.autofetch": true,
-
   // JS
   "[javascript]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
-
   // Markdown
   "[markdown]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
-
   // PowerShell
   // Recommended per https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/vscode/using-vscode?view=powershell-6#configuration-settings-for-visual-studio-code
   "csharp.suppressDotnetRestoreNotification": true,
@@ -69,8 +65,17 @@
   "editor.renderControlCharacters": true,
   "omnisharp.projectLoadTimeout": 120,
   "files.trimTrailingWhitespace": true,
-
   // Markdown-pdf
   // pdf only. Display header and footer.
-  "markdown-pdf.displayHeaderFooter": false
+  "markdown-pdf.displayHeaderFooter": false,
+  "git.confirmSync": false
+  // FSharp
+  // Choose the runtime of FsAutocomplete (FSAC). Requires restart.
+  //"FSharp.fsacRuntime": "netcore",
+  // Allows to pass extra parameters to FSI process
+  //"FSharp.fsiExtraParameters": [
+  //  "fsi"
+  //],
+  // The path to the F# Interactive tool used by Ionide-FSharp
+  //"FSharp.fsiFilePath": "/usr/local/bin/dotnet"
 }
