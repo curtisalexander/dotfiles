@@ -25,7 +25,7 @@ if test (uname) = "Darwin"
     set -gx PYTHONDONTWRITEBYTECODE 1
 
     # path
-    set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $NPM_PACKAGES/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.dotnet/tools /Library/Frameworks/Mono.framework/Versions/Current/bin $PATH
+    set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $NPM_PACKAGES/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.dotnet/tools $PATH
 else
     alias python="python3"
     alias pip="pip3"
