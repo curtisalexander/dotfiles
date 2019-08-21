@@ -12,6 +12,7 @@ alias grep="grep --color=auto"
 
 # macos vs windows subsystem for linux
 if test (uname) = "Darwin"
+    
     # homebrew
     set -gx HOMEBREW_NO_EMOJI 1
     set -gx HOMEBREW_NO_ANALYTICS 1
@@ -24,9 +25,13 @@ if test (uname) = "Darwin"
     # python
     set -gx PYTHONDONTWRITEBYTECODE 1
 
+    # dotnet
+    set -gx DOTNET_CLI_TELEMETRY_OPTOUT 1
     # path
     set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $NPM_PACKAGES/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.dotnet/tools $PATH
+
 else
+    # alias
     alias python="python3"
     alias pip="pip3"
     alias apt-update="sudo apt-get update; and sudo apt-get -y upgrade; and sudo apt-get clean"
