@@ -27,8 +27,10 @@ if test (uname) = "Darwin"
 
     # dotnet
     set -gx DOTNET_CLI_TELEMETRY_OPTOUT 1
+    set -gx MONO_PATH "/Library/Frameworks/Mono.framework/Versions/Current/bin"
+
     # path
-    set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $NPM_PACKAGES/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.dotnet/tools $PATH
+    set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $NPM_PACKAGES/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.dotnet/tools $MONO_PATH $PATH
 
 else
     # alias

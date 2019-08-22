@@ -5,10 +5,11 @@
   // Editor
   // Controls the font size in pixels.
   "editor.fontSize": 14,
-  //"editor.fontFamily": "Fira Code",
-  //"editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
   // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
   "editor.formatOnSave": true,
+  //"editor.formatOnSaveTimeout": 3000,
   // Python
   // Folders in your home directory to look into for virtual environments.
   "python.venvFolders": [
@@ -48,6 +49,7 @@
   ],
   // Git
   "git.autofetch": true,
+  "git.confirmSync": false,
   // JS
   "[javascript]": {
     "editor.insertSpaces": true,
@@ -67,15 +69,12 @@
   "files.trimTrailingWhitespace": true,
   // Markdown-pdf
   // pdf only. Display header and footer.
-  "markdown-pdf.displayHeaderFooter": false,
-  "git.confirmSync": false
+  "markdown-pdf.displayHeaderFooter": false
   // FSharp
   // Choose the runtime of FsAutocomplete (FSAC). Requires restart.
   //"FSharp.fsacRuntime": "netcore",
   // Allows to pass extra parameters to FSI process
-  //"FSharp.fsiExtraParameters": [
-  //  "fsi"
-  //],
+  //"FSharp.fsiExtraParameters": ["fsi"],
   // The path to the F# Interactive tool used by Ionide-FSharp
   //"FSharp.fsiFilePath": "/usr/local/bin/dotnet"
 }
