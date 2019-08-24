@@ -7,6 +7,9 @@
   "editor.fontSize": 14,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
+  // Files
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
   "editor.formatOnSave": true,
   //"editor.formatOnSaveTimeout": 3000,
@@ -25,26 +28,51 @@
   // Non-recursive remapped keys in normal mode. Allows mapping to vim commands or vscode actions. See README for more.
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["j"],
-      "after": ["g", "j"]
+      "before": [
+        "j"
+      ],
+      "after": [
+        "g",
+        "j"
+      ]
     },
     {
-      "before": ["k"],
-      "after": ["g", "k"]
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
     },
     {
-      "before": ["k"],
-      "after": ["g", "k"]
+      "before": [
+        "k"
+      ],
+      "after": [
+        "g",
+        "k"
+      ]
     }
   ],
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     },
     {
-      "before": ["k", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "k",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   // Git
@@ -60,13 +88,18 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
+  // FSharp
+  "[fsharp]": {
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
   // PowerShell
   // Recommended per https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/vscode/using-vscode?view=powershell-6#configuration-settings-for-visual-studio-code
   "csharp.suppressDotnetRestoreNotification": true,
   "editor.renderWhitespace": "all",
   "editor.renderControlCharacters": true,
   "omnisharp.projectLoadTimeout": 120,
-  "files.trimTrailingWhitespace": true,
   // Markdown-pdf
   // pdf only. Display header and footer.
   "markdown-pdf.displayHeaderFooter": false
@@ -74,7 +107,9 @@
   // Choose the runtime of FsAutocomplete (FSAC). Requires restart.
   //"FSharp.fsacRuntime": "netcore",
   // Allows to pass extra parameters to FSI process
-  //"FSharp.fsiExtraParameters": ["fsi"],
+  //"FSharp.fsiExtraParameters": [
+  //  "fsi"
+  //],
   // The path to the F# Interactive tool used by Ionide-FSharp
   //"FSharp.fsiFilePath": "/usr/local/bin/dotnet"
 }
