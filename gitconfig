@@ -2,6 +2,7 @@
     useconfigonly = true
     name = Curtis Alexander
     email = calex@calex.org
+    signingkey = A98101771BDEB433
 [push]
     default = simple
 [merge]
@@ -13,3 +14,5 @@
     editor = vim
 [include]
     path = ~/.gitconfig.local
+[commit]
+    gpsign = true
