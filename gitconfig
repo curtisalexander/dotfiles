@@ -2,7 +2,7 @@
     useconfigonly = true
     name = Curtis Alexander
     email = calex@calex.org
-    signingkey = A98101771BDEB433
+    signingkey = 9551294F845BBAE6
 [push]
     default = simple
 [merge]
