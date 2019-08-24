@@ -15,4 +15,4 @@
 [include]
     path = ~/.gitconfig.local
 [commit]
-    gpsign = true
+    gpgsign = true
