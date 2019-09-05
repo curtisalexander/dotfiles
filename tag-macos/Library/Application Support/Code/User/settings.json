@@ -102,7 +102,9 @@
   "omnisharp.projectLoadTimeout": 120,
   // Markdown-pdf
   // pdf only. Display header and footer.
-  "markdown-pdf.displayHeaderFooter": false
+  "markdown-pdf.displayHeaderFooter": false,
+  "editor.acceptSuggestionOnEnter": "off",
+  "FSharp.smartIndent": true
   // FSharp
   // Choose the runtime of FsAutocomplete (FSAC). Requires restart.
   //"FSharp.fsacRuntime": "netcore",
