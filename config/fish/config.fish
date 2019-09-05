@@ -29,6 +29,9 @@ if test (uname) = "Darwin"
     set -gx DOTNET_CLI_TELEMETRY_OPTOUT 1
     set -gx MONO_PATH "/Library/Frameworks/Mono.framework/Versions/Current/bin"
 
+    # gpg
+    set -gx GPG_TTY "(tty)"
+
     # path
     set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $NPM_PACKAGES/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.dotnet/tools $MONO_PATH $PATH
 
