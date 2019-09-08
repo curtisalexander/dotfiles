@@ -103,8 +103,7 @@
   // Markdown-pdf
   // pdf only. Display header and footer.
   "markdown-pdf.displayHeaderFooter": false,
-  "editor.acceptSuggestionOnEnter": "off",
-  "FSharp.smartIndent": true
+  "editor.acceptSuggestionOnEnter": "off"
   // FSharp
   // Choose the runtime of FsAutocomplete (FSAC). Requires restart.
   //"FSharp.fsacRuntime": "netcore",
