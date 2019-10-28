@@ -41,6 +41,13 @@ After cloning, copy the [rcrc](http://thoughtbot.github.io/rcm/rcrc.5.html).
 cp ~/code/dotfiles/rcrc ~/.rcrc
 ```
 
+Symlink the cloned directory.
+
+```sh
+ln -s ~/code/dotfiles/ ~/.dotfiles
+```
+
+### Run install scripts
 Run the appropriate install script depending upon whether running on MacOS or Ubuntu.
 
 ```sh
