@@ -35,7 +35,13 @@ git clone https://github.com/curtisalexander/dotfiles.git ~/code/dotfiles
 
 ### Setup dotfiles
 
-After cloning, run the appropriate install script depending upon whether running on MacOS or Ubuntu.
+After cloning, copy the [rcrc](http://thoughtbot.github.io/rcm/rcrc.5.html).
+
+```sh
+cp ~/code/dotfiles/rcrc ~/.rcrc
+```
+
+Run the appropriate install script depending upon whether running on MacOS or Ubuntu.
 
 ```sh
 cd bin
