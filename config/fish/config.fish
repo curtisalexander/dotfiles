@@ -12,7 +12,7 @@ alias grep="grep --color=auto"
 
 # macos vs windows subsystem for linux
 if test (uname) = "Darwin"
-    
+
     # homebrew
     set -gx HOMEBREW_NO_EMOJI 1
     set -gx HOMEBREW_NO_ANALYTICS 1
@@ -40,6 +40,9 @@ else
     alias python="python3"
     alias pip="pip3"
     alias apt-update="sudo apt-get update; and sudo apt-get -y upgrade; and sudo apt-get clean"
+
+    # gpg
+    set -gx GPG_TTY (tty)
 end
 
 # bootstrap fisher and process fisher file

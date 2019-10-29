@@ -12,7 +12,7 @@
 [core]
     autocrlf = input
     editor = vim
-[include]
-    path = ~/.gitconfig.local
 [commit]
     gpgsign = true
+[include]
+    path = ~/.gitconfig.local
