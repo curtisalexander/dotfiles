@@ -9,6 +9,7 @@ alias ll="exa --header --long"
 alias lla="exa --header --long -a"
 alias tree="exa --tree"
 alias grep="grep --color=auto"
+alias ci="code-insiders"
 
 # gpg
 set -gx GPG_TTY (tty)
