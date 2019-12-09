@@ -1,21 +1,21 @@
 <#
 .SYNOPSIS
-Install-DotFiles-Windows installs my dotfiles, as well as my custom PowerShell scripts, into my Windows machine
+Install-DotFiles-Windows installs dotfiles, as well as custom PowerShell scripts, on a Windows machine
 
 .DESCRIPTION
-Dotfiles are symlinked into the user home directory.
+Dotfiles are symlinked into the user's home directory (using the $HOME environment variable).
 
-PowerShell scripts are also symlinked into a bin directory and the directory is added to the user's path.
+PowerShell scripts are also symlinked into a bin directory and the directory is added to the user's path (using the user $PATH environment variable).
 
-Two key scripts that are symlinked which mimic functionality from rcm:
-- rcup-win.ps1
-- mkrc-win.ps1
+Two key scripts that are utlized (which mimic functionality from rcm):
+- rcup.ps1
+- mkrc.ps1
 
 .PARAMETER dotfilesDir 
 Directory of dotfiles
 
 .EXAMPLE
-Install-DotFiles-Windows -dotfilesDir "C:\Users\myusername\code\dotfiles"
+Install-DotFiles-Windows -dotfilesDir "C:\code\dotfiles"
 
 .NOTES
 Author: Curtis Alexander
