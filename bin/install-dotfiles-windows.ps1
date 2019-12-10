@@ -14,8 +14,8 @@ Two key scripts that are utlized (which mimic functionality from rcm):
 .PARAMETER dotfilesDir 
 Directory of dotfiles
 
-.EXAMPLE
-Install-DotFiles-Windows -dotfilesDir "C:\code\dotfiles"
+.LINK
+https://github.com/curtisalexander/dotfiles
 
 .NOTES
 Author: Curtis Alexander
