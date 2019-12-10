@@ -41,4 +41,42 @@ Param(
 )
 
 
-Write-Host "The file to link is $file"
+# Validate input
+Write-Host "The file to link is $($file.FullName)"
+
+# Check for json map; add to map
+$binDir = Split-Path -Parent $PSCommandPath
+$dotfilesDir = $binDir.Parent
+
+$jsonDir = $binDir
+$jsonFile = "dotfiles-map.json" # hard-coded for now
+$jsonPath = Join-Path $jsonDir $jsonFile
+
+Write-Host "Checking for $jsonFile within $jsonDir"
+
+# Check if JSON file exists, if not then create it
+if (-not (Test-Path -Path $jsonPath)) {
+    Write-Host "Unable to find file $jsonFile within $jsonDir"
+    Write-Host "Creating a new $jsonFile within $jsonDir"
+    New-Item -ItemType File $jsonPath | Out-Null
+}
+
+# Read JSON file
+try {
+    Get-Content -Path $jsonPath | ConvertFrom-Json 
+} catch {
+    Write-Host "Unable to read $jsonPath as a JSON file"
+    Write-Host "Please correct and re-try mkrc"
+    break
+}
+
+# Move file into tag-windows directory (don't require using -t)
+
+# Check to see if dotfile already exists
+
+# If exists, prompt to overwrite
+
+# If does not exist, move
+
+# Symlink just moved file back into the target directory (derive the target directory)
+
