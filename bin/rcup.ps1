@@ -14,14 +14,29 @@ Root directory of dotfiles
 rcup -dotfilesDir "C:\code\dotfiles"
 
 .LINK
+https://github.com/curtisalexander/dotfiles
+
+.LINK
+https://github.com/thoughtbot/rcm
 
 .NOTES
-Author: Curtis Alexander
+PowerShell Author: Curtis Alexander
+
+Original API and Concept: thoughtbot
 #>
 
 [CmdletBinding()]
 Param(
     [Parameter(Mandatory = $true)]
+    [ValidateScript( {
+            if (-not (Test-Path -Path $_)) {
+                throw "The dotfilesDir directory does not exist."
+            }
+            if (-not (Test-Path -Path $_ -PathType Container) ) {
+                throw "The dotfilesDir argument must be a directory."
+            }
+            return $true
+        })]
     [string]$dotfilesDir
 )
 
