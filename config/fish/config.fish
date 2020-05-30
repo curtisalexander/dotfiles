@@ -9,7 +9,10 @@ alias ll="exa --header --long"
 alias lla="exa --header --long -a"
 alias tree="exa --tree"
 alias grep="grep --color=auto"
-alias dir="exa --header"
+alias ci="code-insiders"
+
+# gpg
+set -gx GPG_TTY (tty)
 
 # macos vs windows subsystem for linux
 if test (uname) = "Darwin"
@@ -30,9 +33,6 @@ if test (uname) = "Darwin"
     set -gx DOTNET_CLI_TELEMETRY_OPTOUT 1
     # set -gx MONO_PATH "/Library/Frameworks/Mono.framework/Versions/Current/bin"
 
-    # gpg
-    set -gx GPG_TTY "(tty)"
-
     # path
     # set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $NPM_PACKAGES/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.dotnet/tools $MONO_PATH $PATH
 # set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.dotnet/tools $PATH  # commented out by conda initialize
@@ -42,6 +42,14 @@ else
     alias python="python3"
     alias pip="pip3"
     alias apt-update="sudo apt-get update; and sudo apt-get -y upgrade; and sudo apt-get clean"
+
+end
+
+# bootstrap fisher and process fisher file
+if not functions -q fisher
+    set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
+    curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
+    fish -c fisher
 end
 
 # >>> conda initialize >>>
