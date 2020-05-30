@@ -1,83 +1,27 @@
 {
-  // Workbench
+  // Window
   "window.restoreWindows": "none",
+  // Workbench
   "workbench.iconTheme": "material-icon-theme",
   // Editor
   // Controls the font size in pixels.
   "editor.fontSize": 14,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
+  "editor.acceptSuggestionOnEnter": "off",
+  // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
+  "editor.formatOnSave": false,
+  //"editor.formatOnSaveTimeout": 3000,
   // Files
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
-  "editor.formatOnSave": true,
-  //"editor.formatOnSaveTimeout": 3000,
-  // Python
-  // Folders in your home directory to look into for virtual environments.
-  "python.venvFolders": [
-    "envs",
-    ".pyenv",
-    ".direnv",
-    ".local/share/virtualenvs"
-  ],
-  // Default Python interpreter / path
-  "python.pythonPath": "/Users/calex/miniconda3/bin/python",
-  "python.formatting.provider": "black",
-  // Vim
-  // Non-recursive remapped keys in normal mode. Allows mapping to vim commands or vscode actions. See README for more.
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "j"
-      ],
-      "after": [
-        "g",
-        "j"
-      ]
-    },
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "g",
-        "k"
-      ]
-    },
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "g",
-        "k"
-      ]
-    }
-  ],
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    },
-    {
-      "before": [
-        "k",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  // Git
-  "git.autofetch": true,
-  "git.confirmSync": false,
+  // Terminal
+  "terminal.integrated.rendererType": "dom",
+  // Language specific
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   // JS
   "[javascript]": {
     "editor.insertSpaces": true,
@@ -94,6 +38,42 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
+  // Python
+  // Folders in your home directory to look into for virtual environments.
+  "python.venvFolders": [
+    "envs",
+    ".pyenv",
+    ".direnv",
+    ".local/share/virtualenvs"
+  ],
+  // Default Python interpreter / path
+  "python.pythonPath": "~/miniconda3/bin/python",
+  "python.formatting.provider": "black",
+  // Vim
+  // Non-recursive remapped keys in normal mode. Allows mapping to vim commands or vscode actions. See README for more.
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  // Git
+  "git.autofetch": true,
+  "git.confirmSync": false,
   // PowerShell
   // Recommended per https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/vscode/using-vscode?view=powershell-6#configuration-settings-for-visual-studio-code
   "csharp.suppressDotnetRestoreNotification": true,
@@ -103,14 +83,17 @@
   // Markdown-pdf
   // pdf only. Display header and footer.
   "markdown-pdf.displayHeaderFooter": false,
-  "editor.acceptSuggestionOnEnter": "off"
   // FSharp
   // Choose the runtime of FsAutocomplete (FSAC). Requires restart.
   //"FSharp.fsacRuntime": "netcore",
+  // The path to the F# Interactive tool used by Ionide-FSharp
+  //"FSharp.fsiFilePath": "/usr/local/bin/dotnet",
   // Allows to pass extra parameters to FSI process
   //"FSharp.fsiExtraParameters": [
-  //  "fsi"
+  //  "fsi",
+  // "--readline"
   //],
-  // The path to the F# Interactive tool used by Ionide-FSharp
-  //"FSharp.fsiFilePath": "/usr/local/bin/dotnet"
+  "FSharp.useSdkScripts": true,
+  "terminal.integrated.inheritEnv": false,
+  "FSharp.suggestGitignore": false
 }

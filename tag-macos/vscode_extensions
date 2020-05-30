@@ -1,12 +1,15 @@
 esbenp.prettier-vscode
 Ionide.Ionide-fsharp
 ms-azure-devops.azure-pipelines
+ms-azuretools.vscode-azurestorage
+ms-dotnettools.csharp
+ms-dotnettools.vscode-dotnet-runtime
 ms-python.python
 ms-vscode.azure-account
-ms-vscode.csharp
 ms-vscode.powershell
 msazurermtools.azurerm-vscode-tools
 paolodellepiane.fantomas-fmt
 PKief.material-icon-theme
+rust-lang.rust
 vscodevim.vim
 yzane.markdown-pdf

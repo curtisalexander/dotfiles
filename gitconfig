@@ -16,3 +16,5 @@
     path = ~/.gitconfig.local
 [commit]
     gpgsign = true
+[credential]
+	helper = !/usr/local/Cellar/openjdk/13.0.2+8_2/libexec/openjdk.jdk/Contents/Home/bin/java -Ddebug=false -Djava.net.useSystemProxies=true -jar /usr/local/Cellar/git-credential-manager/2.0.4_1/libexec/git-credential-manager-2.0.4.jar
