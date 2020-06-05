@@ -9,6 +9,11 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.acceptSuggestionOnEnter": "off",
+  "editor.wordWrapColumn": 100,
+  "editor.rulers": [100],
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
   // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
   "editor.formatOnSave": false,
   //"editor.formatOnSaveTimeout": 3000,
@@ -17,6 +22,7 @@
   "files.insertFinalNewline": true,
   // Terminal
   "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.inheritEnv": false,
   // Language specific
   // JSON
   "[json]": {
@@ -30,7 +36,16 @@
   // Markdown
   "[markdown]": {
     "editor.insertSpaces": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "wordWrapColumn",
+  },
+  // MDX
+  "[mdx]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "wordWrapColumn",
   },
   // FSharp
   "[fsharp]": {
@@ -77,8 +92,6 @@
   // PowerShell
   // Recommended per https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/vscode/using-vscode?view=powershell-6#configuration-settings-for-visual-studio-code
   "csharp.suppressDotnetRestoreNotification": true,
-  "editor.renderWhitespace": "all",
-  "editor.renderControlCharacters": true,
   "omnisharp.projectLoadTimeout": 120,
   // Markdown-pdf
   // pdf only. Display header and footer.
@@ -94,6 +107,10 @@
   // "--readline"
   //],
   "FSharp.useSdkScripts": true,
-  "terminal.integrated.inheritEnv": false,
-  "FSharp.suggestGitignore": false
+  "FSharp.suggestGitignore": false,
+  // Julia
+  "julia.enableTelemetry": true,
+  "files.associations": {
+    "*.md": "markdown"
+  }
 }
