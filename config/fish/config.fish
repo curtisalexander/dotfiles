@@ -35,7 +35,7 @@ if test (uname) = "Darwin"
 
     # path
     # set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $NPM_PACKAGES/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.dotnet/tools $MONO_PATH $PATH
-# set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.dotnet/tools $PATH  # commented out by conda initialize
+    set -gx PATH $HOME/bin $HOME/miniconda3/bin /usr/local/opt/openssl/bin $HOME/.local/bin $HOME/.cargo/bin $HOME/.dotnet/tools $HOME/.nimble/bin $PATH  # commented out by conda initialize  # commented out by conda initialize
 
 else
     # alias
@@ -54,6 +54,6 @@ end
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-eval /Users/calex/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+# eval /Users/calex/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
 
