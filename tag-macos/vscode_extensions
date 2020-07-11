@@ -1,6 +1,6 @@
 esbenp.prettier-vscode
 Ionide.Ionide-fsharp
-ms-azure-devops.azure-pipelines
+julialang.language-julia
 ms-azuretools.vscode-azurestorage
 ms-dotnettools.csharp
 ms-dotnettools.vscode-dotnet-runtime
@@ -11,5 +11,7 @@ msazurermtools.azurerm-vscode-tools
 paolodellepiane.fantomas-fmt
 PKief.material-icon-theme
 rust-lang.rust
+singularitti.vscode-julia-formatter
+vscode-icons-team.vscode-icons
 vscodevim.vim
 yzane.markdown-pdf
