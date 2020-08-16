@@ -74,6 +74,7 @@
   // Python
   // Folders in your home directory to look into for virtual environments.
   "python.defaultInterpreterPath": "~/miniconda3/bin/python",
+  "python.languageServer": "Pylance",
   "python.formatting.provider": "black",
   "python.venvFolders": [
     "envs",
@@ -84,6 +85,7 @@
   // Rust
   "[rust]": {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "matklad.rust-analyzer",
   },
   // Terminal
   "terminal.integrated.rendererType": "dom",
@@ -100,6 +102,7 @@
       "after": ["g", "k"]
     }
   ],
+  "vim.highlightedyank.enable": true,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "k"],
@@ -114,5 +117,4 @@
   "window.restoreWindows": "none",
   // Workbench
   "workbench.iconTheme": "vscode-icons",
-  "python.languageServer": "Pylance",
 }
