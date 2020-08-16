@@ -14,8 +14,6 @@
     editor = vim
 [commit]
     gpgsign = true
-[credential]
-    helper = !/usr/local/Cellar/openjdk/14.0.1/libexec/openjdk.jdk/Contents/Home/bin/java -Ddebug=false -Djava.net.useSystemProxies=true -jar /usr/local/Cellar/git-credential-manager/2.0.4_1/libexec/git-credential-manager-2.0.4.jar
 [include]
     path = ~/.gitconfig.local
 [github]
