@@ -17,6 +17,8 @@ set -gx GPG_TTY (tty)
 # macos vs windows subsystem for linux
 if test (uname) = "Darwin"
 
+    # starship
+    starship init fish | source
     # homebrew
     set -gx HOMEBREW_NO_EMOJI 1
     set -gx HOMEBREW_NO_ANALYTICS 1
