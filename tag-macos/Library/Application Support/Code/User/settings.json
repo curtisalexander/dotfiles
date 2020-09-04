@@ -6,7 +6,7 @@
   // Controls the font size in pixels.
   "editor.fontSize": 14,
   // "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
   "editor.formatOnSave": false,
   //"editor.formatOnSaveTimeout": 3000,
@@ -17,7 +17,8 @@
   "editor.wordWrapColumn": 100,
   // Files
   "files.associations": {
-    "*.md": "markdown"
+    "*.md": "markdown",
+    "*.mdx": "markdown"
   },
   "files.insertFinalNewline": false,
   "files.trimTrailingWhitespace": false,

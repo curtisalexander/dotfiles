@@ -18,3 +18,5 @@
     path = ~/.gitconfig.local
 [github]
     user = curtisalexander
+[pull]
+    ff = only
