@@ -1,80 +1,44 @@
 {
-  // Workbench
-  "window.restoreWindows": "none",
-  "workbench.iconTheme": "material-icon-theme",
+  // Recommended per https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/vscode/using-vscode?view=powershell-6#configuration-settings-for-visual-studio-code
+  "csharp.suppressDotnetRestoreNotification": true,
   // Editor
+  "editor.acceptSuggestionOnEnter": "off",
   // Controls the font size in pixels.
   "editor.fontSize": 14,
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
-  // Files
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
+  // "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": false,
   // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   //"editor.formatOnSaveTimeout": 3000,
-  // Python
-  // Folders in your home directory to look into for virtual environments.
-  "python.venvFolders": [
-    "envs",
-    ".pyenv",
-    ".direnv",
-    ".local/share/virtualenvs"
-  ],
-  // Default Python interpreter / path
-  "python.pythonPath": "/Users/calex/miniconda3/bin/python",
-  "python.formatting.provider": "black",
-  // Vim
-  // Non-recursive remapped keys in normal mode. Allows mapping to vim commands or vscode actions. See README for more.
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "j"
-      ],
-      "after": [
-        "g",
-        "j"
-      ]
-    },
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "g",
-        "k"
-      ]
-    },
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "g",
-        "k"
-      ]
-    }
-  ],
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    },
-    {
-      "before": [
-        "k",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "editor.rulers": [100],
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100,
+  // Files
+  "files.associations": {
+    "*.md": "markdown",
+    "*.mdx": "markdown"
+  },
+  "files.insertFinalNewline": false,
+  "files.trimTrailingWhitespace": false,
+  // FSharp
+  // Choose the runtime of FsAutocomplete (FSAC). Requires restart.
+  //"FSharp.fsacRuntime": "netcore",
+  // The path to the F# Interactive tool used by Ionide-FSharp
+  //"FSharp.fsiFilePath": "/usr/local/bin/dotnet",
+  // Allows to pass extra parameters to FSI process
+  //"FSharp.fsiExtraParameters": [
+  //  "fsi",
+  // "--readline"
+  //],
+  "FSharp.suggestGitignore": false,
+  "FSharp.useSdkScripts": true,
+  "[fsharp]": {
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
   // Git
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -83,34 +47,75 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 2
   },
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Julia
+  "julia.enableTelemetry": false,
   // Markdown
   "[markdown]": {
     "editor.insertSpaces": true,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "wordWrapColumn",
   },
-  // FSharp
-  "[fsharp]": {
-    "editor.detectIndentation": false,
-    "editor.insertSpaces": true,
-    "editor.tabSize": 4
-  },
-  // PowerShell
-  // Recommended per https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/vscode/using-vscode?view=powershell-6#configuration-settings-for-visual-studio-code
-  "csharp.suppressDotnetRestoreNotification": true,
-  "editor.renderWhitespace": "all",
-  "editor.renderControlCharacters": true,
-  "omnisharp.projectLoadTimeout": 120,
   // Markdown-pdf
   // pdf only. Display header and footer.
   "markdown-pdf.displayHeaderFooter": false,
-  "editor.acceptSuggestionOnEnter": "off"
-  // FSharp
-  // Choose the runtime of FsAutocomplete (FSAC). Requires restart.
-  //"FSharp.fsacRuntime": "netcore",
-  // Allows to pass extra parameters to FSI process
-  //"FSharp.fsiExtraParameters": [
-  //  "fsi"
-  //],
-  // The path to the F# Interactive tool used by Ionide-FSharp
-  //"FSharp.fsiFilePath": "/usr/local/bin/dotnet"
+  // MDX
+  "[mdx]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "wordWrapColumn",
+  },
+  // Recommended per https://docs.microsoft.com/en-us/powershell/scripting/core-powershell/vscode/using-vscode?view=powershell-6#configuration-settings-for-visual-studio-code
+  "omnisharp.projectLoadTimeout": 120,
+  // Python
+  // Folders in your home directory to look into for virtual environments.
+  "python.defaultInterpreterPath": "~/miniconda3/bin/python",
+  "python.languageServer": "Pylance",
+  "python.formatting.provider": "black",
+  "python.venvFolders": [
+    "envs",
+    ".pyenv",
+    ".direnv",
+    ".local/share/virtualenvs"
+  ],
+  // Rust
+  "[rust]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "matklad.rust-analyzer",
+  },
+  // Terminal
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.inheritEnv": false,
+  // Vim
+  // Non-recursive remapped keys in normal mode. Allows mapping to vim commands or vscode actions. See README for more.
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    }
+  ],
+  "vim.highlightedyank.enable": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  // Window
+  "window.restoreWindows": "none",
+  // Workbench
+  "workbench.iconTheme": "vscode-icons",
 }

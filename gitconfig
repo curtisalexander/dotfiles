@@ -16,3 +16,7 @@
     gpgsign = true
 [include]
     path = ~/.gitconfig.local
+[github]
+    user = curtisalexander
+[pull]
+    ff = only

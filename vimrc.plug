@@ -7,10 +7,9 @@ let g:has_async = v:version >= 800 || has('nvim')
 call plug#begin('~/.vim/plugged')
 
 Plug 'NLKNguyen/papercolor-theme'
-
-if g:has_async
-    Plug 'w0rp/ale'
-endif
-
+Plug 'fsharp/vim-fsharp', {
+      \ 'for': 'fsharp',
+      \ 'do':  'make fsautocomplete',
+      \}
 
 call plug#end()

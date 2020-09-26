@@ -61,8 +61,6 @@ nnoremap k gk
 " allow saving as sudo when forget to start vim as sudo
 cmap w!! w !sudo tee 1> /dev/null %
 
-
-
 " JS
 autocmd FileType javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
@@ -77,3 +75,7 @@ autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
 " Markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 autocmd FileType markdown setlocal tabstop=4 shiftwidth=4 softtabstop=4
+
+" Project Files
+autocmd BufNewFile,BufReadPost *.fsproj set filetype=xml
+autocmd BufNewFile,BufReadPost *.csproj set filetype=xml
