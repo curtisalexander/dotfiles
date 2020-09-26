@@ -64,7 +64,8 @@ if (-not (Test-Path -Path $jsonPath)) {
 # Read JSON file
 try {
     Get-Content -Path $jsonPath | ConvertFrom-Json 
-} catch {
+}
+catch {
     Write-Host "Unable to read $jsonPath as a JSON file"
     Write-Host "Please correct and re-try mkrc"
     break
@@ -80,3 +81,4 @@ try {
 
 # Symlink just moved file back into the target directory (derive the target directory)
 
+ 
